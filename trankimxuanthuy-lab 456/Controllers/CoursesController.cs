@@ -23,7 +23,7 @@ namespace trankimxuanthuy_lab_456.Controllers
         {
             var viewModel = new CoursesViewModel
             {
-                Categories = _dbContext.Categories.ToList()
+                Categories = _dbContext.Categories.ToList() 
             };
             return View();
         }
