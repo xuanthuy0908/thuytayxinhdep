@@ -21,11 +21,11 @@ namespace trankimxuanthuy_lab_456.Controllers
         // GET: Courses
         public ActionResult create()
         {
-            var viewModel = new CoursesViewModel
+            var viewModel = new CourseViewModel
             {
                 Categories = _dbContext.Categories.ToList() 
             };
-            return View();
+            return View(viewModel);
         }
     }
 }
