@@ -20,6 +20,9 @@ namespace trankimxuanthuy_lab_456.Controllers
 
         }
         // GET: Courses
+        [Authorize]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult create(CourseViewModel viewModel)
         {
             if(!ModelState.IsValid)

@@ -13,19 +13,26 @@ namespace trankimxuanthuy_lab_456.ViewModels
         
         public string Place { get; set; }
         [Required]
+        [FutureDate]
         
-        public string Data { get; set; }
+        public string Date { get; set; }
         [Required]
+        [ValidTime]
         public string Time{ get; set; }
         [Required]
+       
         public byte Category { get; set; }
         public IEnumerable<Category> Categories { get; set; }
-        public object Date { get; private set; }
+       
 
         public DateTime GetDataTime()
         {
             return DateTime.Parse(string.Format("{0} {1} ", Date, Time));
          
+        }
+
+        private class ValidTimeAttribute : Attribute
+        {
         }
     }
 }
