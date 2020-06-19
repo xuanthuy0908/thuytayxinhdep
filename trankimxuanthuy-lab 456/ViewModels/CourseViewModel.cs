@@ -10,6 +10,7 @@ namespace trankimxuanthuy_lab_456.ViewModels
     public class CourseViewModel
     {
         [Required]
+        
         public string Place { get; set; }
         [Required]
         
