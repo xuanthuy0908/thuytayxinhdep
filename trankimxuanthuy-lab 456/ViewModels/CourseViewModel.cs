@@ -31,8 +31,6 @@ namespace trankimxuanthuy_lab_456.ViewModels
          
         }
 
-        private class ValidTimeAttribute : Attribute
-        {
-        }
+       
     }
 }

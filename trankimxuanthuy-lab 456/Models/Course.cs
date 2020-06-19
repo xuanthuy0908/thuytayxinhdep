@@ -19,7 +19,7 @@ namespace trankimxuanthuy_lab_456.Models
         public Category Category { get; set; }
         [Required]
         public byte CategoryId { get; set; }
-
+        public DateTime DateTime { get; internal set; }
     }
 
     

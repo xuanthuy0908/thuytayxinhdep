@@ -215,12 +215,18 @@
     <Compile Include="Migrations\202006050857068_PopulateCategoryTable.Designer.cs">
       <DependentUpon>202006050857068_PopulateCategoryTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006190641298_AddNameColumnToApplicationUser.cs" />
+    <Compile Include="Migrations\202006190641298_AddNameColumnToApplicationUser.Designer.cs">
+      <DependentUpon>202006190641298_AddNameColumnToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Attendance.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="Models\Following.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -291,7 +297,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\FutureDate\" />
-    <Folder Include="Views\ValidTime\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -310,6 +315,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006050857068_PopulateCategoryTable.resx">
       <DependentUpon>202006050857068_PopulateCategoryTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006190641298_AddNameColumnToApplicationUser.resx">
+      <DependentUpon>202006190641298_AddNameColumnToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

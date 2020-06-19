@@ -20,7 +20,16 @@ namespace trankimxuanthuy_lab_456.Controllers
 
         }
         // GET: Courses
+        
         [Authorize]
+        public ActionResult Create()
+        {
+            var viewModel = new CourseViewModel
+            {
+                Categories = _dbContext.Categories.ToList()
+            };
+            return View(viewModel);
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult create(CourseViewModel viewModel)
@@ -42,6 +51,7 @@ namespace trankimxuanthuy_lab_456.Controllers
             _dbContext.SaveChanges();
             return RedirectToAction("Index", "Home");
         }
+
 
     }
 
